@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/saveMessageFragment">
+
+    <fragment
+        android:id="@+id/saveMessageFragment"
+        android:name="com.example.customalertdialog.SaveMessageFragment"
+        android:label="Save"
+        tools:layout="@layout/fragment_save_message">
+        <action
+            android:id="@+id/action_saveMessageFragment_to_customDialogFragment"
+            app:destination="@id/customDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/customDialogFragment"
+        android:name="com.example.customalertdialog.CustomDialogFragment"
+        android:label="CustomDialogFragment" >
+        <action
+            android:id="@+id/action_customDialogFragment_to_viewMessageFragment"
+            app:destination="@id/viewMessageFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/viewMessageFragment"
+        android:name="com.example.customalertdialog.ViewMessageFragment"
+        android:label="View"
+        tools:layout="@layout/fragment_view_message" />
+</navigation>

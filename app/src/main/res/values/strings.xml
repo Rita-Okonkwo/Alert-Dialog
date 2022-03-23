@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CustomAlertDialog</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_message">Save Message</string>
+    <string name="message_saved">Message Saved!</string>
+    <string name="view">View</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="hello_awesome_people">Hello Awesome People</string>
+    <string name="your_message_has_been_saved">Your message has been saved!</string>
+</resources>
